@@ -1,21 +1,16 @@
 // import logo from './logo.svg';
 import './App.css';
+import Navbar from './navbar';
+import Home from './home';
 
 function App() {
   let title = 'Welcome to the blog';
-  let likes = 50;
-  // let persons = {name:"anu",age:13}
-  let link = "https://www.google.com";
   return (
     <div className="App">
+      <Navbar />
       <div className="content">
         <h1>{title}</h1>
-        <p>Like {likes} times</p>
-        {/* <p>{persons}</p> */}
-        <p>{"hai"}</p>
-        <p>{[1,2,3,4]}</p>
-        <p>{Math.random () * 20}</p>
-        <a href={link}>Google</a>
+        <Home />
       </div>
     </div>
   );
