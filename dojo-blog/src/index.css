@@ -25,5 +25,8 @@
   margin:40px auto;
   padding:20px;
   max-width:600px;
-  
+
+}
+.home a {
+  text-decoration: none;
 }
