@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import './App.css';
+// import './index.css';
 import Navbar from './navbar';
 import Home from './home';
 
