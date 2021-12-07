@@ -22,6 +22,7 @@ const Home = () => {
     //   id: 3,
     // },
   );
+  const[isPending,setPending] = useState(true);
   const [name,setName] = useState('mario');
 
  const handleDelete = (id) => {
@@ -29,18 +30,21 @@ const Home = () => {
     setBlogs(newBlogs);
  }
  useEffect(() => {
-   fetch('http://localhost:8000/blogs')
-   .then(res => {
-     return res.json();
-   })
-   .then(data => {
-     console.log(data);
-     setBlogs(data)
-   });
+   setTimeout(() => {
+    fetch('http://localhost:8000/blogs')
+    .then(res => {
+      return res.json();
+    })
+    .then(data => {
+      console.log(data);
+      setBlogs(data);
+      setPending(false);
+    });
+   },1000);
  }, [] );
   return (
     <div className="Home">
-      
+      {isPending && <div>Loading...</div>}
      {blogs && <BlogList blogs={blogs} title={"hai all!"} handleDelete={handleDelete} />}
       {/* <BlogList blogs={blogs.filter((blog) => blog.author === 'mario')} title={"mario's blogs"} />
       <BlogList blogs={blogs} handleDelete={handleDelete} /> */}
