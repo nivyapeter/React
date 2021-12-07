@@ -1,0 +1,22 @@
+{
+    "blogs": [
+        {
+        "title": "My fiirst blog",
+        "body" : "why we use it ? it is long established fact that a reader will be distracted",
+        "author": "Mario",
+         "id" : 1
+    },
+    {
+        "title": "My fiirst blog",
+        "body" : "why we use it ? it is long established fact that a reader will be distracted",
+        "author": "Mario",
+         "id" : 2
+    },
+    {
+        "title": "My fiirst blog",
+        "body" : "why we use it ? it is long established fact that a reader will be distracted",
+        "author": "Mario",
+         "id" : 3
+    }
+    ]
+}
