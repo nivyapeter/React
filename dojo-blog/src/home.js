@@ -52,7 +52,7 @@ const Home = () => {
 //       }))
 //    },1000);
 //  }, [] );
-  const {data:blogs,isPending,error}= useFetch('http://localhost:8001/blogs');
+  const {data:blogs,isPending,error}= useFetch('http://localhost:8000/blogs');
 
 return (
     <div className="Home">
