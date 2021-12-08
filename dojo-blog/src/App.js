@@ -1,18 +1,30 @@
 // import logo from './logo.svg';
-import './App.css';
+// import './index.css';
 import Navbar from './navbar';
 import Home from './home';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import create from './create';
+import Create from './create';
 
 function App() {
-  let title = 'Welcome to the blog';
+  // let title = 'Welcome to the blog';
   return (
+    <Router>
     <div className="App">
       <Navbar />
       <div className="content">
-        <h1>{title}</h1>
-        <Home />
+        {/* <h1>{title}</h1> */}
+       <Switch>
+         <Route exact path="/">
+           <Home />
+         </Route>
+         <Route path="/create">
+           <Create />
+         </Route>
+       </Switch>
       </div>
     </div>
+    </Router>
   );
 }
 
