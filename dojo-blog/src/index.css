@@ -48,3 +48,29 @@
 .blog-preview p {
   color:black;
 }
+/* create blog */
+.create  {
+  max-width:400px;
+  margin:0 auto;
+  text-align:center;
+}
+.create label {
+  display:block;
+  text-align: left;;
+}
+.create button {
+  background:coral;
+  color:black;
+  border:0;
+  padding:8px;
+  border-radius:8px;
+  cursor:pointer;
+}
+.create input, .create textarea,.create select {
+  width:100%;
+  padding:6px 10px;
+  margin:10px 0;
+  border:1px solid #ddd;
+  box-sizing:border-box;
+  display:block;
+}

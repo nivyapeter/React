@@ -2,7 +2,7 @@ import useFetch from './useFetch';
 import BlogListOne from './BlogListOne';
 const Home = () =>{
     const title = "hai all";
-    const {data:blogs,isPending,error}= useFetch('http://localhost:8001/blogs');
+    const {data:blogs,isPending,error}= useFetch('http://localhost:8003/blogs');
     return (
     <div className="Home">
     {/* <h2>Home page</h2> */}
