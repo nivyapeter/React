@@ -6,16 +6,30 @@ const doclink ="https://docs.microsoft.com/en-gb/";
 const supportlink = "https://azure.microsoft.com/en-gb/support/options/";
 const contactlink = "https://azure.microsoft.com/en-gb/support/options/";
 const signlink ="https://azure.microsoft.com/auth/signin/?loginProvider=Microsoft&redirectUri=%2Fen-gb%2F";
+
+let array=["Explore","Products","Solutions","Pricing","Partners"," Resources"]
+let itemList =[];
+array.forEach((item,index)=>{
+    itemList.push( <li key={index}>{item}</li>)
+})
 function Header() {
-  return (
-    <div className="header">
+for(var i=0;i<6;i++) {
+    return (
+   
+    <div className="header" key={[i]}>
       <ul className="nav-list">
-        <li class="nav-list-item">
+        {/* {array.map((item,index)=>{
+                return <li class="nav-list-item" type="button"
+                key={index}>{item}</li>
+            })} */}
+            <li class="nav-list-item">
           <button class="nav-button" type="button">
-            Explore
+            {itemList}
           </button>
         </li>
-        <li class="nav-list-item">
+        </ul>
+        
+        {/* <li class="nav-list-item">
           <button class="nav-button" type="button">
             Products
           </button>
@@ -39,8 +53,9 @@ function Header() {
           <button class="nav-button" type="button">
             Resources
           </button>
-        </li>
-      </ul>
+        </li
+      </ul> */}
+      
       <div className="account-button">
         <Button />
       </div>
@@ -73,5 +88,6 @@ function Header() {
       </div>
     </div>
   );
+    }
 }
 export default Header;

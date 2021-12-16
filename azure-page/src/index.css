@@ -1,10 +1,10 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Segoe UI',SegoeUI,'Segoe WP',system-ui,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 code {
@@ -14,13 +14,13 @@ code {
 .App-logo {
   width:2vw;
 }
-.App-header {
+/* .App-header {
   padding:12px 0px;
-}
+} */
 .logo-section {
   display: flex;
   align-items: center;
-  width:91vw;
+  width:92vw;
   margin:auto;
 }
 .logo-text {
@@ -54,8 +54,8 @@ code {
   font-size: 13px;
 }
 .dropdown-block {
-  margin-left:24px !important;
-  display: inline-flex;
+  /* margin-left:24px !important; */
+  /* display: inline-flex; */
 }
 .dropdown-block  {
   display: flex;
@@ -68,6 +68,7 @@ code {
   display: flex;
   list-style: none;
   margin:0;
+  padding-left:20px;
 }
 .nav-list-item {
   display: flex;
@@ -80,6 +81,7 @@ code {
   background-color: transparent;
   text-align:left;
   border:none;
+  display: flex;
 }
 .button-section {
   background-color: #89c402;
@@ -93,19 +95,24 @@ code {
   text-align: center;
   line-height: 1;
   margin-left:12px;
+  width:8vw;
+  text-decoration: none;
+}
+.button-section a {
+  text-decoration: none;
 }
 .nav-button {
   padding:20px 8px;
 }
 .account-button {
-  padding:20px 8px;
+  padding:31px 8px;
 }
 .search-form {
   margin-right:24px;
   width:120px;
   z-index:1;
   position: relative;
-  padding: 20px 8px;
+  padding: 25px 8px;
   margin-left: 66px;
 }
 .search-block input {
@@ -118,15 +125,21 @@ code {
   padding-right: 24px;
   min-height: 32px;
   display: flex;
+  width:9vw;
 
 }
 .search-block button {
   /* right:8px; */
-  top: 36px;
+  top: 40px;
   position: absolute;
-  left:187px;
+  left:7rem;
 
 }
 .nav2-list {
   margin-left:2rem;
+  padding: 13px 0px;
+}
+.nav2-list ul li a {
+  color:black;
+  text-decoration: none;
 }
