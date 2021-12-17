@@ -7,20 +7,20 @@ const title = "Azure";
 const link1 = "https://microsoft.com/";
 const link2 = "https://azure.microsoft.com/en-gb/";
 
-let names = [
-  {
-    title: "Get Azure",
-    body: "iscover secure, future-ready cloud solutions – on-premises, hybrid, multicloud or at the edge",
-  },
-  {
-    title: "Get Azure",
-    body: "iscover secure, future-ready cloud solutions – on-premises, hybrid, multicloud or at the edge",
-  },
-  {
-    title: "Get Azure",
-    body: "iscover secure, future-ready cloud solutions – on-premises, hybrid, multicloud or at the edge",
-  },
-];
+// let names = [
+//   {
+//     title: "Get Azure",
+//     body: "iscover secure, future-ready cloud solutions – on-premises, hybrid, multicloud or at the edge",
+//   },
+//   {
+//     title: "Get Azure",
+//     body: "iscover secure, future-ready cloud solutions – on-premises, hybrid, multicloud or at the edge",
+//   },
+//   {
+//     title: "Get Azure",
+//     body: "iscover secure, future-ready cloud solutions – on-premises, hybrid, multicloud or at the edge",
+//   },
+// ];
 
 function App() {
   return (
