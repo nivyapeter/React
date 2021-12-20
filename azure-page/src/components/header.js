@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "./button";
+import Explore from "./dropdown/explore/explore";
+// import Dropdown from "./dropdown/explore/explore";
 import Search from "./search";
 
 const doclink = "https://docs.microsoft.com/en-gb/";
@@ -17,9 +19,34 @@ let array = [
   " Resources",
 ];
 let array2 = ["Docs", "Support", "Contact Sales", "Sign in"];
+let names = [
+  {
+    title: "Get Azure",
+    body: "iscover secure, future-ready cloud solutions – on-premises, hybrid, multicloud or at the edge",
+  },
+  {
+    title: "Get Azure",
+    body: "iscover secure, future-ready cloud solutions – on-premises, hybrid, multicloud or at the edge",
+  },
+  {
+    title: "Get Azure",
+    body: "iscover secure, future-ready cloud solutions – on-premises, hybrid, multicloud or at the edge",
+  },
+];
+
 function Header() {
+    // const [dropCategory,setDropCategory] = useState("")
+    // let dropDownComponent = null
+    // switch (dropCategory) {
+    //     case value:{item}
+    //        let state= <Explore />
+    //         break;
+    
+    //     default
+    //         break;
+    // }
   return (
-    <div className="header">
+    <><div className="header">
       <ul className="nav-list">
         {array.map((item, index) => {
           return (
@@ -32,7 +59,7 @@ function Header() {
         })}
       </ul>
       <div className="account-button">
-        <Button />
+        <Button bg="green" title="Free account" color="black" link="https://azure.microsoft.com/en-gb/free/" />
       </div>
       <div className="search-form">
         <Search />
@@ -50,7 +77,11 @@ function Header() {
           })}
         </ul>
       </div>
-    </div>
+
+
+    </div><div className="dropdown-section">
+        <Explore names={names}/>
+      </div></>
   );
 }
 export default Header;

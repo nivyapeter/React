@@ -1,26 +1,15 @@
 import logo from "./logo.svg";
 import "./index.css";
-import Dropdown from "./components/dropdown/dropdown";
+// import Dropdown from "./components/dropdown/explore/explore";
 import Header from "./components/header";
+import Banner from "./components/banner";
+// import Explore from "./components/dropdown/explore/explore";
+// import DropDown from "./components/dropdown/explore/DropdownMain";
 
 const title = "Azure";
 const link1 = "https://microsoft.com/";
 const link2 = "https://azure.microsoft.com/en-gb/";
 
-// let names = [
-//   {
-//     title: "Get Azure",
-//     body: "iscover secure, future-ready cloud solutions – on-premises, hybrid, multicloud or at the edge",
-//   },
-//   {
-//     title: "Get Azure",
-//     body: "iscover secure, future-ready cloud solutions – on-premises, hybrid, multicloud or at the edge",
-//   },
-//   {
-//     title: "Get Azure",
-//     body: "iscover secure, future-ready cloud solutions – on-premises, hybrid, multicloud or at the edge",
-//   },
-// ];
 
 function App() {
   return (
@@ -41,8 +30,12 @@ function App() {
          <Dropdown bg="blue" title="hello"/> */}
             <Header />
           </div>
+
         </div>
       </header>
+      <div className="mainBanner">
+              <Banner />
+            </div>
     </div>
   );
 }

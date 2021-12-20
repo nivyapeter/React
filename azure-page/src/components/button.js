@@ -1,11 +1,9 @@
 import React from "react";
-
-const link="https://azure.microsoft.com/en-gb/free/";
 const title = "Free account";
-function Button () {
+function Button ({bg,title,color,link}) {
     return(
         <div className="Button">
-            <button class="button-section">
+            <button class="button-section" style={{background:bg,color:color}}>
                 <a href={link}>{title}</a>
             </button>
         </div>
