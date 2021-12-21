@@ -7,7 +7,7 @@ function Explore ({names=[]}) {
     return(
     <div className="dropdown-blok">
      <button className="dropdown">
-         <h2>Explore</h2>
+         <h2>Explore Azure</h2>
     
     <ul className="drop-down-expand">
     {names.map(name => {

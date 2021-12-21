@@ -1,8 +1,10 @@
 import logo from "./logo.svg";
+import img from "./manage.png";
 import "./index.css";
 // import Dropdown from "./components/dropdown/explore/explore";
 import Header from "./components/header";
 import Banner from "./components/banner";
+import Card from "./components/Card";
 // import Explore from "./components/dropdown/explore/explore";
 // import DropDown from "./components/dropdown/explore/DropdownMain";
 
@@ -35,6 +37,9 @@ function App() {
       </header>
       <div className="mainBanner">
               <Banner />
+            </div>
+            <div className="mainCard">
+              <Card img={img} title="Manage satellite data at cloud scale" body="Communicate with, and process data from satellites with Azure Orbital, a fully managed ground station service." link="https://aka.ms/AzureSpace"/>
             </div>
     </div>
   );

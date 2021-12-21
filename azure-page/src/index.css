@@ -226,3 +226,23 @@ code {
   display: flex;
   flex-direction: row;
 }
+.card {
+  background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+    color: #4c4c51;
+    padding: 24px;
+    position: relative;
+    border: 1px solid transparent;
+    width:45vw;
+} 
+.card-logo {
+  display: flex;
+}
+.card-content  a{
+  text-decoration: none;
+  color:blue;
+}
+.card-content  a:hover {
+  text-decoration: underline;
+}
