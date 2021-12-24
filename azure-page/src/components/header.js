@@ -101,7 +101,7 @@ function Header() {
       </div>
 
 
-    </div><div className="dropdown-section">
+    </div><div className="dropdown-section azure-container">
         {/* <Explore names={names}/> */}
         {componentRender}
       </div></>

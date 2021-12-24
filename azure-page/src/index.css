@@ -11,13 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.App-logo {
+.app-logo {
   width:2vw;
 }
 /* .App-header {
   padding:12px 0px;
 } */
-
+.azure-container {
+  max-width:67vw ;
+  margin:auto;
+}
 .logo-section {
   display: flex;
   align-items: center;
@@ -166,6 +169,11 @@ code {
   color: #fff;
   padding: 12px 0;
   text-align: center;
+  transition: width 2s;
+}
+.banner-top a:hover {
+ text-decoration: underline;
+ width: 1px;
 }
 .centerBanner {
   background:url("https://azurecomcdn.azureedge.net/cvt-59acfc73146e1c8512e35ae6c5e5518a5402dd994b33153cbd5853be39914df8/images/page/home/hero-desktop.png");
@@ -205,6 +213,11 @@ code {
   width: 68vw;
   color:white;
 }
+.centerBanner-text h2 {
+  color:white;
+  width:51vw;
+}
+
 .centerBanner-text p1 {
   font-size: 18px;
   font-weight: 400;
@@ -214,9 +227,9 @@ code {
 }
 .dropdown-section {
   position: absolute;
-  left: 0;
+  left: 19rem;
     position: absolute;
-    top: 14%;
+    top: 10%;
     width: 100%;
     display: block;
     z-index: 999;
@@ -231,10 +244,11 @@ code {
     border-radius: 6px;
     box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
     color: #4c4c51;
-    padding: 24px;
     position: relative;
     border: 1px solid transparent;
-    width:45vw;
+    /* width:45vw; */
+    margin-bottom: 28px;
+    /* height: 37vh; */
 } 
 .card-logo {
   display: flex;
@@ -245,4 +259,17 @@ code {
 }
 .card-content  a:hover {
   text-decoration: underline;
+}
+.card-main-heading h1 {
+  text-align: center;
+  font-size: 22px;
+  padding:40px 0;
+  width:100vw;
+}
+.card-blk {
+  display: flex;
+}
+.same-card {
+  border: none;
+  margin-left: 41px;
 }

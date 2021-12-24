@@ -14,10 +14,10 @@ const Banner = () => {
                     </div>
                 </div>
                 <div className="centerBanner">
-                    <div className="column large-8 centerBanner-text">
+                    <div className="column large-8 centerBanner-text azure-container">
                        <p class="text-heading1">INVENT WITH PURPOSE</p>
                        <h1>Azure. The cloud for space stations, startups, and everything in between.</h1>
-                       <p1>Create next-generation solutions and deploy them anywhere—on or off the planet. Get started with an Azure free account, 12 months of popular services free, and a </p1>
+                       <h2>Create next-generation solutions and deploy them anywhere—on or off the planet. Get started with an Azure free account, 12 months of popular services free, and a <span>$200</span></h2>
                        <Button  bg="green" title="Try Azure for free" color="black" link="https://azure.microsoft.com/en-gb/free/"/>
                     </div> 
                     

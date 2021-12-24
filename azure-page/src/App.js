@@ -1,28 +1,26 @@
 import logo from "./logo.svg";
 import img from "./manage.png";
+import img1 from "./watch.png";
+import img2 from "./innovate.png";
 import "./index.css";
-// import Dropdown from "./components/dropdown/explore/explore";
 import Header from "./components/header";
 import Banner from "./components/banner";
 import Card from "./components/Card";
-// import Explore from "./components/dropdown/explore/explore";
-// import DropDown from "./components/dropdown/explore/DropdownMain";
+import {HEADING,TITLE}  from "./Constatns/constats";
 
-const title = "Azure";
-const link1 = "https://microsoft.com/";
-const link2 = "https://azure.microsoft.com/en-gb/";
+
 
 
 function App() {
   return (
-    <div className="App container">
-      <header className="App-header">
-        <div className="logo-section">
-          <a href={link1}>
-            <img src={logo} className="App-logo" alt="logo" />
+    <div className="app-container">
+      <header className="app-header">
+        <div className="logo-section azure-container">
+          <a href={TITLE}>
+            <img src={logo} className="app-logo" alt="logo" />
           </a>
-          <a className="logo-text" href={link2}>
-            {title}
+          <a className="logo-text" href={TITLE}>
+            {TITLE}
           </a>
 
           {/* </div> */}
@@ -38,8 +36,18 @@ function App() {
       <div className="mainBanner">
               <Banner />
             </div>
-            <div className="mainCard">
-              <Card img={img} title="Manage satellite data at cloud scale" body="Communicate with, and process data from satellites with Azure Orbital, a fully managed ground station service." link="https://aka.ms/AzureSpace"/>
+            <div className="mainCard ">
+              <div className="card-main-heading">
+                <h1>{HEADING}</h1>
+              </div>
+              <div className="card-blk azure-container">
+               
+              <Card img={img} title="Manage satellite data at cloud scale" body="Communicate with, and process data from satellites with Azure Orbital, a fully managed ground station service." link="https://aka.ms/AzureSpace" height="40vh" padding="24px"/>
+               <div className="same-card">
+                 <Card img={img1} title="Watch Microsoft Ignite on demand" body="See Azure announcements from the event, including new technologies to innovate across all your environments." link="https://myignite.microsoft.com/home" display="flex" height="21vh" />
+                 <Card img={img2} title="Watch Microsoft Ignite on demand" body="See Azure announcements from the event, including new technologies to innovate across all your environments." link="https://myignite.microsoft.com/home" display="flex" height="21vh"/>
+               </div>
+               </div>
             </div>
     </div>
   );

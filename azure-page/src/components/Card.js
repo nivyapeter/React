@@ -1,8 +1,8 @@
 import React from "react";
 
-function Card({img,title,body,link}) {
+function Card({img,title,body,link,display,height,padding}) {
     return (
-           <div className="card">
+           <div className="card" style={{display:display, height:height,padding:padding}}>
                 <div className="card-logo">
                     <img src={img} className="card-image"></img>
                 </div>
