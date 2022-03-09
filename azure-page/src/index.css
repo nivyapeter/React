@@ -1,0 +1,275 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI',SegoeUI,'Segoe WP',system-ui,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.app-logo {
+  width:2vw;
+}
+/* .App-header {
+  padding:12px 0px;
+} */
+.azure-container {
+  max-width:67vw ;
+  margin:auto;
+}
+.logo-section {
+  display: flex;
+  align-items: center;
+  /* width:74%; */
+  margin:0 auto;
+  justify-content: center;
+}
+.logo-text {
+  text-decoration: none;
+  color: black;
+  margin-left: 24px !important;
+}
+.logo-text :hover {
+  text-decoration: underline;
+}
+.dropdown {
+  padding: 40px 20px;
+  margin-right: auto;
+
+}
+.drop-down-expand {
+  list-style: none;
+  display: grid;
+  grid-auto-flow:column;
+  grid-template-rows: repeat(3,1fr);
+  grid-auto-columns: minmax(30ch,50%);
+  column-gap:40px;
+  row-gap:20px;
+}
+.drop-down-expand li {
+  margin-bottom: 0px;
+}
+.drop-down-expand p {
+  margin:6px 0 0;
+  line-height: 1.5;
+  font-size: 13px;
+}
+.dropdown-block {
+  /* margin-left:24px !important; */
+  /* display: inline-flex; */
+}
+.dropdown-block  {
+  display: flex;
+  
+}
+.header {
+  display:flex;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin:0;
+  padding-left:20px;
+}
+.nav-list-item {
+  display: flex;
+  align-items: center;
+  margin:0;
+  font-size:14px;
+}
+.nav-button {
+  width:initial;
+  background-color: transparent;
+  text-align:left;
+  border:none;
+  display: flex;
+}
+.button-section {
+  background-color: #89c402;
+  border: 1px solid #6f9e02;
+  border-radius:4px;
+  color:#1a1a1f;
+  display: inline-block;
+  font-size:12px;
+  font-weight: 600;
+  padding:9px;
+  text-align: center;
+  line-height: 1;
+  margin-left:12px;
+  width:8vw;
+  text-decoration: none;
+}
+.button-section a {
+  text-decoration: none;
+}
+.nav-button {
+  padding:20px 8px;
+}
+.account-button {
+  padding:31px 8px;
+}
+.search-form {
+  margin-right:24px;
+  width:120px;
+  z-index:1;
+  position: relative;
+  padding: 25px 8px;
+  margin-left: 66px;
+}
+.search-block input {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  border-color: #747479;
+  color: #4c4c51;
+  font-size: 13px;
+  padding-left: 12px;
+  padding-right: 6px;
+  min-height: 32px;
+  display: flex;
+  /* width:9vw; */
+
+}
+.search-block button {
+  /* right:8px; */
+  top: 37px;
+  position: absolute;
+  left:10rem;
+  border:none;
+  background:whitesmoke;
+
+}
+.nav2-list {
+  margin-left:5rem;
+  padding: 13px 0px;
+}
+.nav2-list ul li a {
+  color:black;
+  text-decoration: none;
+}
+
+.banner {
+  background-color: #fff;
+    padding-top: 0;
+    width: 100%;
+    margin: 0 auto;
+    outline: 0;
+}
+.banner-top {
+  background-color: #0078d4;
+  padding: 12px 0;
+  color: white;
+  text-align: center;
+ 
+}
+.banner-top a {
+  color: #fff;
+  padding: 12px 0;
+  text-align: center;
+  transition: width 2s;
+}
+.banner-top a:hover {
+ text-decoration: underline;
+ width: 1px;
+}
+.centerBanner {
+  background:url("https://azurecomcdn.azureedge.net/cvt-59acfc73146e1c8512e35ae6c5e5518a5402dd994b33153cbd5853be39914df8/images/page/home/hero-desktop.png");
+  padding:72px 0 60px 0;
+  text-align: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  display: flex;
+  align-items: center;
+  margin:0 auto;
+  justify-content: center;
+  flex-direction: column;
+}
+.banner-top-text {
+  display: inline-block;
+  font-size:14px;
+  font-weight:600;
+  padding-right: 1rem;
+  text-decoration: none;
+}
+.banner-top-text a {
+  transition: color .15s ease-in-out;
+}
+.text-heading1 {
+  color: #50e6ff!important;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0 0 9px;
+}
+.centerBanner-text h1 {
+  font-size: 54px;
+  line-height: 1.3;
+  margin: 0 0 12px;
+  font-weight: 600;
+  width: 68vw;
+  color:white;
+}
+.centerBanner-text h2 {
+  color:white;
+  width:51vw;
+}
+
+.centerBanner-text p1 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0 0 9px;
+  color:white;
+}
+.dropdown-section {
+  position: absolute;
+  left: 19rem;
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    display: block;
+    z-index: 999;
+    box-shadow: 0 3px 5px -1px rgb(0 0 0 / 25%);
+}
+.drop-down-expand {
+  display: flex;
+  flex-direction: row;
+}
+.card {
+  background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+    color: #4c4c51;
+    position: relative;
+    border: 1px solid transparent;
+    /* width:45vw; */
+    margin-bottom: 28px;
+    /* height: 37vh; */
+} 
+.card-logo {
+  display: flex;
+}
+.card-content  a{
+  text-decoration: none;
+  color:blue;
+}
+.card-content  a:hover {
+  text-decoration: underline;
+}
+.card-main-heading h1 {
+  text-align: center;
+  font-size: 22px;
+  padding:40px 0;
+  width:100vw;
+}
+.card-blk {
+  display: flex;
+}
+.same-card {
+  border: none;
+  margin-left: 41px;
+}
