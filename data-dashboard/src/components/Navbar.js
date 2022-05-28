@@ -10,6 +10,10 @@ function Navbar() {
   const showSidebar =()=> {
     setsidebar(!sidebar);
   }
+
+  const[subNav,setSubNav] = useState(false);
+  const showSubnav =() => setSubNav(!subNav);
+
   return (
    <>
    <div className="navbar">
@@ -28,9 +32,12 @@ function Navbar() {
        {SidebarData.map((item,index) => {
          return (
            <li key={index} className={item.cName}>
-             <Link to={item.path}>
+             <Link to={item.path} onclick={item.subNav && showSubnav} >
                {item.icon}
-               <span>{item.title}</span>
+               <span className="flex items-center">{item.title}<span>{item.dropIcon}</span></span>
+               <div>
+                 {item.subNav && subNav ? item.iconOpened : item.subNav ? item.iconClosed : null}
+               </div>
              </Link>
            </li>
          )
