@@ -1,7 +1,7 @@
 import React from "react";
 import { AiFillHome } from "react-icons/ai";
 import { FaCartPlus, FaEnvelopeOpenText } from "react-icons/fa";
-import {IoIosPaper, IoMdArrowDropdown, IoMdHelpCircle, IoMdPeople} from "react-icons/io";
+import {IoIosPaper, IoMdArrowDropdown, IoMdArrowDropup, IoMdHelpCircle, IoMdPeople} from "react-icons/io";
 
 
 
@@ -10,7 +10,8 @@ export const SidebarData = [
         title: "Home",
         path: "/",
         icon:<AiFillHome />,
-        dropIcon:<IoMdArrowDropdown />,
+        iconClosed:<IoMdArrowDropdown />,
+        iconOpened: <IoMdArrowDropup />,
         cName: 'nav-text',
 
         subNav: [

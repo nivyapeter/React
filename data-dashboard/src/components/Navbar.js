@@ -34,12 +34,21 @@ function Navbar() {
            <li key={index} className={item.cName}>
              <Link to={item.path} onclick={item.subNav && showSubnav} >
                {item.icon}
-               <span className="flex items-center">{item.title}<span>{item.dropIcon}</span></span>
+               <span className="flex items-center">{item.title}</span>
                <div>
                  {item.subNav && subNav ? item.iconOpened : item.subNav ? item.iconClosed : null}
                </div>
              </Link>
+             {/* {subNav && item.subNav.map((item,index) => {
+             return (
+               <DropdownLink to={item.path} key={index}>
+                 {item.icon}
+                 <span className="flex items-center">{item.title}</span>
+                 </DropdownLink>
+             )
+            })} */}
            </li>
+           
          )
        })}
      </ul>
