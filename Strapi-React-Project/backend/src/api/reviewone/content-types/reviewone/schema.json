@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reviewones",
+  "info": {
+    "singularName": "reviewone",
+    "pluralName": "reviewones",
+    "displayName": "reviewone",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {}
+}
