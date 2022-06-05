@@ -21,8 +21,10 @@ h1,h2,h3,h4 {
 }
 .App a {
   text-decoration: none;
-  color: #8e2ad6;
-  border-bottom: 2px solid #8e2ad6 ;
+  /* color: #8e2ad6;
+  border-bottom: 2px solid #8e2ad6 ; */
+  color:white;
+  
 }
 .site-header h1 {
   font-size: 1.5em;
