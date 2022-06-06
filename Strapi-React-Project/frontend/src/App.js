@@ -4,7 +4,7 @@ import SiteHeader from "./components/SiteHeader";
 import Category from "./pages/Category";
 import Products from "./pages/Products";
 import Restaurants from "./pages/Restaurants";
-import ReviewDetails from "./pages/ReviewDetails";
+import RestaurantsDetails from "./pages/RestaurantsDetails";
 function App() {
   return (
     <Router>
@@ -14,7 +14,7 @@ function App() {
         <SiteHeader />
         <Routes>
           <Route path="/" element={<Restaurants />} />
-          <Route path="/datails/:id" element={<ReviewDetails />} />
+          <Route path="/details/:id" element={<RestaurantsDetails />} />
           <Route path="/category/:id" element={<Category />} />
           <Route path="/products" element={<Products />} />
         </Routes>
