@@ -2,24 +2,36 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { getReviewList } from "../api/api";
 // import useFetch from "../hooks/useFetch";
+// import { useQuery, gql} from "@apollo/client";
 
-function Restaurants() {
+// const Restaurants = gql`
+//   query GetRestaurants {
+//     restaurants {
+//       Name,
+//       description,id
+//     }
+//   }
+// `
+
+function Restaurantss() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(true);
 
-  useEffect(() => {
+  useEffect(() => { 
     getReviewList(setData, setLoading, setError);
   }, []);
+  // const {loading,error,data} = useQuery(Restaurants)
+  console.log(data);
   if (error) return <p>error.....</p>;
   if (loading) return <p>Loading .....</p>;
+
 
   return (
     <div>
       <h1 className="text-4xl text-black text-center">Restaurants</h1>
       <div className="flex justify-between flex-wrap flex-row pt-8 gap-y-12">
         {data?.map(({ attributes, id }) => {
-          // console.log(attributes.Image.data.id);
           return (
             <div>
               <div
@@ -57,4 +69,4 @@ function Restaurants() {
   );
 }
 
-export default Restaurants;
+export default Restaurantss;

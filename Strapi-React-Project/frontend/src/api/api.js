@@ -24,3 +24,14 @@ export const getReviewList = async (setData,setLoading,setError) => {
         setRestData(res.data.data.attributes);
       });
   };
+  export const getRestCategory = async (setData) => {
+    axios
+      .get("http://localhost:1337/api/categories/", {
+        headers: {
+            'Content-Type': 'application/json'
+        },
+      })
+      .then((res) => {
+        setData(res.data);
+      });
+  };
