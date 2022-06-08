@@ -21,7 +21,6 @@ export const getReviewList = async (setData,setLoading,setError) => {
         },
       })
       .then((res) => {
-        console.log(res.data.id.attributes);
-        setRestData(res.data.data);
+        setRestData(res.data.data.attributes);
       });
   };
