@@ -1,16 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Languages } from "../constants";
 import linkdn from "../images/linkdn.svg";
 import mySql from "../images/mysql.svg";
 
 function About() {
   return (
-    // <div className="font-bold flex items-center justify-center pt-12 flex-col text-slate-700 text-xl">
-    //     <h3 className="text-xl">I am Nivya K Peter</h3>
-    //      <p className="text-base">-  🔭 I’m currently working at  [Vonnue]</p>
-    //      <p className="text-base">- 💬 “Learning to code is learning to create and innovate.”</p>
-    // </div>
-
     <div>
       <div className="cursor-pointer shadow-xl p-7 bg-white mt-9 text-white w-[57vw] m-auto rounded-lg ">
         <h2 className="opacity-75 mb-5  font-normal leading-snug text-slate-700 text-xl ">
@@ -31,12 +26,11 @@ function About() {
       <div className="cursor-pointer h-[max-content] shadow-xl p-7 bg-white mt-9 text-white w-[57vw] m-auto rounded-lg ">
         <div className="opacity-75 mb-5  font-normal leading-snug text-slate-700 text-xl ">
           <p>Let's Connect</p>
-          <a
-            href="(https://www.linkedin.com/in/nivya-k-peter-074131a2/
-"
+          <Link 
+            to='/linkdn'
           >
             <img className="mt-4" src={linkdn} alt="image" />
-          </a>
+          </Link>
         </div>
         <div className="opacity-75 mb-5  font-normal leading-snug text-slate-700 text-xl flex flex-col">
           <div className="flex flex-row gap-1">
