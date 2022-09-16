@@ -21,7 +21,17 @@ export const getReviewList = async (setData,setLoading,setError) => {
         },
       })
       .then((res) => {
-        console.log(res.data.id.attributes);
-        setRestData(res.data.data);
+        setRestData(res.data.data.attributes);
+      });
+  };
+  export const getRestCategory = async (setData) => {
+    axios
+      .get("http://localhost:1337/api/categories/", {
+        headers: {
+            'Content-Type': 'application/json'
+        },
+      })
+      .then((res) => {
+        setData(res.data);
       });
   };

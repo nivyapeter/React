@@ -4,4 +4,8 @@ module.exports = ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
+  cors: {
+    origin: ['*'], //allow all origins
+    headers: ['*'], //allow all headers
+  },
 });
